@@ -8,11 +8,11 @@ import java.util.logging.Logger;
 
 
 
-public class connection_to_db {
+public class general_db {
     
     private static String servername = "localhost";
     private static String username = "root";
-    private static String dbname = "hrproject";
+    private static String dbname = "general_db";
     private static Integer portnumber = 3306;
     private static String password = "";
     
@@ -31,7 +31,7 @@ public class connection_to_db {
         try {
             connect = data.getConnection();
         } catch (SQLException ex) {
-            Logger.getLogger("Get Connection -> " + connection_to_db.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger("Get Connection -> " + general_db.class.getName()).log(Level.SEVERE, null, ex);
         }
         return connect;
         

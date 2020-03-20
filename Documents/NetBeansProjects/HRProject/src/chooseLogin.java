@@ -59,6 +59,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_general.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_general.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_general.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_generalMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_generalMouseEntered(evt);
             }
@@ -77,6 +80,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_instituional.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_instituional.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_instituional.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_instituionalMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_instituionalMouseEntered(evt);
             }
@@ -90,6 +96,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_trading.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_trading.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_trading.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_tradingMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_tradingMouseEntered(evt);
             }
@@ -103,6 +112,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_finance.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_finance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_finance.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_financeMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_financeMouseEntered(evt);
             }
@@ -113,10 +125,12 @@ public class chooseLogin extends javax.swing.JFrame {
 
         jButton_human.setFont(new java.awt.Font("Arial Black", 1, 13)); // NOI18N
         jButton_human.setText("<html>Human Resource<br/> Management Unit</html>");
-        jButton_human.setActionCommand("<html>Human Resource<br/> Management Unit</html>");
         jButton_human.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_human.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_human.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_humanMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_humanMouseEntered(evt);
             }
@@ -130,6 +144,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_assets.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_assets.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_assets.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_assetsMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_assetsMouseEntered(evt);
             }
@@ -143,6 +160,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_info.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_info.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_info.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_infoMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_infoMouseEntered(evt);
             }
@@ -156,6 +176,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_public.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_public.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_public.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_publicMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_publicMouseEntered(evt);
             }
@@ -169,6 +192,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_administrative.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_administrative.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_administrative.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_administrativeMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_administrativeMouseEntered(evt);
             }
@@ -186,6 +212,9 @@ public class chooseLogin extends javax.swing.JFrame {
         jButton_security.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         jButton_security.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton_security.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton_securityMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 jButton_securityMouseEntered(evt);
             }
@@ -383,6 +412,86 @@ public class chooseLogin extends javax.swing.JFrame {
         rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jButton1_chiefMouseClicked
+
+    private void jButton_infoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_infoMouseClicked
+        Info_and_comm_Form rf = new Info_and_comm_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_infoMouseClicked
+
+    private void jButton_instituionalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_instituionalMouseClicked
+        InstiDevForm rf = new InstiDevForm();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_instituionalMouseClicked
+
+    private void jButton_assetsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_assetsMouseClicked
+        Asset_and_amenities_Form rf = new Asset_and_amenities_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_assetsMouseClicked
+
+    private void jButton_humanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_humanMouseClicked
+        Human_resources_Form rf = new Human_resources_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_humanMouseClicked
+
+    private void jButton_tradingMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_tradingMouseClicked
+        Trading_operation_Form rf = new Trading_operation_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_tradingMouseClicked
+
+    private void jButton_administrativeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_administrativeMouseClicked
+        Administrative_division_Form rf = new Administrative_division_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_administrativeMouseClicked
+
+    private void jButton_generalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_generalMouseClicked
+        general_service_Form rf = new general_service_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_generalMouseClicked
+
+    private void jButton_publicMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_publicMouseClicked
+        Public_relation_Form rf = new Public_relation_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_publicMouseClicked
+
+    private void jButton_financeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_financeMouseClicked
+        Finance_division_Form rf = new Finance_division_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_financeMouseClicked
+
+    private void jButton_securityMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton_securityMouseClicked
+        Security_Form rf = new Security_Form();
+        rf.setVisible(true);
+        rf.pack();
+        rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+    }//GEN-LAST:event_jButton_securityMouseClicked
 
     /**
      * @param args the command line arguments

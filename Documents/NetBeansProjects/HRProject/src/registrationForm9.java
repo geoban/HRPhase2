@@ -19,12 +19,12 @@ import javax.swing.JOptionPane;
  *
  * @author ideapad 520
  */
-public class registrationForm extends javax.swing.JFrame {
+public class registrationForm9 extends javax.swing.JFrame {
 
     /**
      * Creates new form registrationForm
      */
-    public registrationForm() {
+    public registrationForm9() {
         initComponents();
         this.setLocationRelativeTo(this);
         this.setResizable(false);
@@ -507,15 +507,14 @@ public class registrationForm extends javax.swing.JFrame {
                                     .addComponent(jLabel5)
                                     .addComponent(jLabel6)
                                     .addComponent(jTextField_id, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-                                    .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, kGradientPanel2Layout.createSequentialGroup()
-                                            .addComponent(jPasswordField_confirmpword, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jButton_show1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, kGradientPanel2Layout.createSequentialGroup()
-                                            .addComponent(jPasswordField_password, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jButton_show)))
+                                    .addGroup(kGradientPanel2Layout.createSequentialGroup()
+                                        .addComponent(jPasswordField_confirmpword, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton_show1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(kGradientPanel2Layout.createSequentialGroup()
+                                        .addComponent(jPasswordField_password, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton_show))
                                     .addComponent(jTextField_position)
                                     .addComponent(jTextField_unit)))
                             .addGroup(kGradientPanel2Layout.createSequentialGroup()
@@ -630,7 +629,7 @@ public class registrationForm extends javax.swing.JFrame {
             String registrationUserQuery = "INSERT INTO `user`(`first name`, `last name`, `birth date`, `gender`, `address`, `contact`, `fatherfname`, `fatherlname`, `motherfname`, `motherlname`, `ssnumber`, `tax`,`position`, `unit / division`, `idNumbers`, `password`, `confirm password`) "
                     + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             try{
-                ps = Chief_db.getConnection().prepareStatement(registrationUserQuery);
+                ps = finance_db.getConnection().prepareStatement(registrationUserQuery);
                 ps.setString(1, firstname);
                 ps.setString(2, lastname);
                 ps.setString(3, birthdate);
@@ -935,7 +934,7 @@ public class registrationForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_minimizeMouseExited
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        ChiefLoginForm lf = new ChiefLoginForm();
+        Finance_division_Form lf = new Finance_division_Form();
         lf.setVisible(true);
         lf.pack();
         lf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -1107,7 +1106,7 @@ public class registrationForm extends javax.swing.JFrame {
         String query = "SELECT * FROM `user` WHERE `idNumbers` = ?";
         
         try {
-            ps = Chief_db.getConnection().prepareStatement(query);
+            ps = finance_db.getConnection().prepareStatement(query);
             ps.setString(1, id);
             rs = ps.executeQuery();
             

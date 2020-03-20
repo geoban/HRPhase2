@@ -20,12 +20,12 @@ import javax.swing.JOptionPane;
  *
  * @author ideapad 520
  */
-public class ChiefLoginForm extends javax.swing.JFrame {
+public class Trading_operation_Form extends javax.swing.JFrame {
 
     /**
      * Creates new form loginForm
      */
-    public ChiefLoginForm() {
+    public Trading_operation_Form() {
         initComponents(); 
         this.setResizable(false);
         
@@ -71,7 +71,7 @@ public class ChiefLoginForm extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 204), 3));
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel1.setText("Chief Login");
+        jLabel1.setText("Trading Operation");
 
         jLabel3.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel3.setText("ID Number");
@@ -173,7 +173,7 @@ public class ChiefLoginForm extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(131, 131, 131))
+                .addGap(76, 76, 76))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -376,7 +376,7 @@ public class ChiefLoginForm extends javax.swing.JFrame {
         String query = "SELECT * FROM `user` WHERE `idNumbers` = ? AND `password` = ?";
         
         try {
-            ps = Chief_db.getConnection().prepareStatement(query);
+            ps = trading_db.getConnection().prepareStatement(query);
             
             ps.setString(1, username);
             ps.setString(2, password);
@@ -418,7 +418,7 @@ public class ChiefLoginForm extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel_createMouseExited
 
     private void jLabel_createMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel_createMouseClicked
-        registrationForm rf = new registrationForm();
+        registrationForm5 rf = new registrationForm5();
         rf.setVisible(true);
         rf.pack();
         rf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
